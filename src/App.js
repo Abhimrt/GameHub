@@ -18,7 +18,7 @@ function App() {
             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" to={"/"} role="button" aria-expanded="false">🎮 Games</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href={"/GameHub/Snake"}>🐍 Snake</a></li>
-              <li><NavLink className="dropdown-item" href={"/GameHub/Sudoku"}>📃 Sudoku</NavLink></li>
+              <li><NavLink className="dropdown-item" to={"/GameHub/Sudoku"}>📃 Sudoku</NavLink></li>
               <li><a className="dropdown-item" to={"/"}>Something else here</a></li>
               <li><hr className="dropdown-divider" /></li>
               <li><a className="dropdown-item" to={"/"}>Separated link</a></li>
