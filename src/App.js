@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate, NavLink } from "react-router-dom";
 import './App.css';
 import Snake from "./component/Snake";
 import Sudoku from "./component/Sudoku";
@@ -18,7 +18,7 @@ function App() {
             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" to={"/"} role="button" aria-expanded="false">🎮 Games</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href={"/GameHub/Snake"}>🐍 Snake</a></li>
-              <li><a className="dropdown-item" href={"/GameHub/Sudoku"}>📃 Sudoku</a></li>
+              <li><NavLink className="dropdown-item" href={"/GameHub/Sudoku"}>📃 Sudoku</NavLink></li>
               <li><a className="dropdown-item" to={"/"}>Something else here</a></li>
               <li><hr className="dropdown-divider" /></li>
               <li><a className="dropdown-item" to={"/"}>Separated link</a></li>
