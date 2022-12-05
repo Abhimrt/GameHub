@@ -1,0 +1,13 @@
+.sud{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.sud ul{
+    height: 133px;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    margin-bottom: 0;
+}

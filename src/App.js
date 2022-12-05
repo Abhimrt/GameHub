@@ -1,6 +1,7 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 import './App.css';
 import Snake from "./component/Snake";
+import Sudoku from "./component/Sudoku";
 import Main from "./Main";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" to={"/"} role="button" aria-expanded="false">🎮 Games</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href={"/GameHub/Snake"}>🐍 Snake</a></li>
-              <li><a className="dropdown-item" to={"/"}>Another action</a></li>
+              <li><a className="dropdown-item" href={"/GameHub/Sudoku"}>📃 Sudoku</a></li>
               <li><a className="dropdown-item" to={"/"}>Something else here</a></li>
               <li><hr className="dropdown-divider" /></li>
               <li><a className="dropdown-item" to={"/"}>Separated link</a></li>
@@ -32,6 +33,7 @@ function App() {
       <Routes className="main">
         <Route path="/" element={<Main />} />
         <Route path="/Snake" element={<Snake />} />
+        <Route path="/Sudoku" element={<Sudoku />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </>

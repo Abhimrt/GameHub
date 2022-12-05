@@ -13,6 +13,15 @@ canvas{
     box-shadow: 0px 0px 60px rgb(83, 83, 83);
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    flex-direction: column;
+}
+
 /* navbar */
 nav{
     width: 90vw;
