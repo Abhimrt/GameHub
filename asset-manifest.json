@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/GameHub/static/css/main.a9e01237.css",
-    "main.js": "/GameHub/static/js/main.61997849.js",
+    "main.css": "/GameHub/static/css/main.6beb1cbc.css",
+    "main.js": "/GameHub/static/js/main.302bb730.js",
     "index.html": "/GameHub/index.html",
-    "main.a9e01237.css.map": "/GameHub/static/css/main.a9e01237.css.map",
-    "main.61997849.js.map": "/GameHub/static/js/main.61997849.js.map"
+    "main.6beb1cbc.css.map": "/GameHub/static/css/main.6beb1cbc.css.map",
+    "main.302bb730.js.map": "/GameHub/static/js/main.302bb730.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9e01237.css",
-    "static/js/main.61997849.js"
+    "static/css/main.6beb1cbc.css",
+    "static/js/main.302bb730.js"
   ]
 }
