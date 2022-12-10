@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate, NavLink } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import './App.css';
 import Snake from "./component/Snake";
 import Sudoku from "./component/Sudoku";
