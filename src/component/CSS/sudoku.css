@@ -1,6 +1,7 @@
 .sudoku{
     width: 100vw;
     height: 80vh;
+    justify-content: space-evenly;
 }
 .sud{
     width: min(600px,90vw);
@@ -40,12 +41,15 @@
     /* transition: .2s ease; */
 }
  .sud input:hover{
-    background-color: rgba(128, 128, 128, 0.1);
+    background-color: rgba(128, 128, 128, 0.2);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
     transform: scale(1.1);
 }
+.sud input:active{
+    transform: scale(1) !important;
+}
 .sud input:focus{
-    background-color: rgba(128, 128, 128, 0.1);
+    background-color: rgba(128, 128, 128, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.129) !important;
     outline: none;
     caret-color: transparent;
