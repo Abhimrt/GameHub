@@ -1,8 +1,13 @@
-*{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
     margin: 0;
     padding: 0;
 }
-canvas{
+
+canvas {
     position: absolute;
     right: 0;
     left: 0;
@@ -13,18 +18,25 @@ canvas{
     box-shadow: 0px 0px 60px rgb(83, 83, 83);
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.col{
+
+.col {
     flex-direction: column;
 }
 
 /* navbar */
-nav{
+nav {
     width: 90vw;
     margin: auto;
     margin-top: 2rem;
+}
+
+.internalTictactoe {
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
 }

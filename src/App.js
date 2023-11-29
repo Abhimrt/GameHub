@@ -4,6 +4,7 @@ import Snake from "./component/Snake";
 import Sudoku from "./component/Sudoku";
 import SudSolver from "./component/SudSolver";
 import Main from "./Main";
+import TicTacToe from "./component/TicTacToe";
 
 function App() {
 
@@ -21,14 +22,14 @@ function App() {
               <li><a className="dropdown-item" href={"/GameHub/Snake"}>🐍 Snake</a></li>
               <li><a className="dropdown-item" href={"/GameHub/Sudoku"}>📃 Sudoku</a></li>
               <li><a className="dropdown-item" href={"/GameHub/Sudoku-solver"}>❓ Sudoku Solver</a></li>
-              <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" to={"/"}>Separated link</a></li>
+              <li className="mt-2 text-sm text-gray-500">   🚻 Dual Player<hr className="dropdown-divider mt-0" /> </li>
+              <li><a className="dropdown-item" href={"/GameHub/tictactoe"}>❎ TicTacToe</a></li>
             </ul>
           </li>
           <li className="nav-item">
             <a className="nav-link" href={"https://github.com/Abhimrt"}>🧑🏻‍💻 Developer</a>
           </li>
-         
+
         </ul>
       </nav >
       <Routes className="main">
@@ -36,6 +37,7 @@ function App() {
         <Route path="/Snake" element={<Snake />} />
         <Route path="/Sudoku" element={<Sudoku />} />
         <Route path="/Sudoku-solver" element={<SudSolver />} />
+        <Route path="/tictactoe" element={<TicTacToe />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </>
