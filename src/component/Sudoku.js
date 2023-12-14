@@ -39,7 +39,7 @@ const Sudoku = () => {
     function change(e) {
         if (e.value.length === 1 && temp[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] === 0)
             array[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] = parseInt(e.value)
-        else if (e.value.length == 2) {
+        else if (e.value.length === 2) {
             array[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] = parseInt(e.value) % 10
         }
         setarray([...array])
@@ -48,6 +48,7 @@ const Sudoku = () => {
             if (!e.includes(0)) {
                 zeros++;
             }
+            return (" ");
         })
         if (zeros === 9) {
             chkSolutioin();
@@ -76,8 +77,8 @@ const Sudoku = () => {
 
     //     let i=0,j=0,k=0,iTemp = 0;
     //                     for( k = 0;k<9;k++){
-    //                     let jTemp = j==9?0:j;
-    //                     iTemp = j==9?i:iTemp;
+    //                     let jTemp = j===9?0:j;
+    //                     iTemp = j===9?i:iTemp;
     //                     for( i=iTemp;i<iTemp+3;i++){
     //                         content.concat(<div className='sud-in' >
     //                             {
@@ -106,7 +107,7 @@ const Sudoku = () => {
                                     {
                                         e.map((e1, i1) => {
                                             return (
-                                                <input type="number" key={i1} autoComplete="off" max={"9"} min={"1"} className={`center sudContent ${temp[i][i1] != 0 ? "defined" : ""}`} id={`${i}${i1}`} value={e1 == 0 ? "" : e1} onChange={(e) => change(e.target)} />
+                                                <input type="number" key={i1} autoComplete="off" max={"9"} min={"1"} className={`center sudContent ${temp[i][i1] !== 0 ? "defined" : ""}`} id={`${i}${i1}`} value={e1 === 0 ? "" : e1} onChange={(e) => change(e.target)} />
                                             )
                                         })
                                     }

@@ -3,7 +3,6 @@ import './App.css';
 import Snake from "./component/Snake";
 import Sudoku from "./component/Sudoku";
 import SudSolver from "./component/SudSolver";
-import Main from "./Main";
 import TicTacToe from "./component/TicTacToe";
 
 function App() {

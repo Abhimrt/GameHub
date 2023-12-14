@@ -30,7 +30,7 @@ const SudSolver = () => {
             array[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] = parseInt(e.value)
             solution[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] = parseInt(e.value)
         }
-        else if (e.value.length == 2) {
+        else if (e.value.length === 2) {
             {
                 array[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] = parseInt(e.value) % 10
                 solution[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] = parseInt(e.value) % 10
@@ -48,18 +48,18 @@ const SudSolver = () => {
         }
     }
 
-    function sleep(milliseconds) {
-        return new Promise(resolve => setTimeout(resolve, milliseconds));
-    }
+    // function sleep(milliseconds) {
+    //     return new Promise(resolve => setTimeout(resolve, milliseconds));
+    // }
 
     let N = 9
     function solveSudoku(row, col) {
 
-        if (row == N)
+        if (row === N)
             return true;
 
         let nrow, ncol
-        if (col == N - 1) {
+        if (col === N - 1) {
             nrow = row + 1;
             ncol = 0;
         } else {
@@ -67,7 +67,7 @@ const SudSolver = () => {
             ncol = col + 1;
         }
 
-        if (solution[row][col] != 0) {
+        if (solution[row][col] !== 0) {
             if (isSafe(row, col, solution[row][col])) {
                 if (solveSudoku(nrow, ncol)) {
                     return true;
@@ -99,21 +99,21 @@ const SudSolver = () => {
         //        chk horizontal and vertical
         let i, j
         for (i = 0; i < N; i++) {
-            if (solution[row][i] == num  ) {
-                if(i!=col)
+            if (solution[row][i] === num  ) {
+                if(i!==col)
                     return false;
             }
         }
         for (i = 0; i < N; i++) {
-            if (solution[i][col] == num  ) {
-                if(row!=i)
+            if (solution[i][col] === num  ) {
+                if(row!==i)
                     return false;
             }
         }
         //        chk in the inner box
         for (i = (row - row % 3); i < (row - row % 3) + 3; i++) {
             for (j = (col - col % 3); j < (col - col % 3) + 3; j++) {
-                if (solution[i][j] == num && i!=row && j!=col) {
+                if (solution[i][j] === num && i!==row && j!==col) {
                     return false;
                 }
             }
@@ -138,7 +138,7 @@ const SudSolver = () => {
                                         {
                                             e.map((e1, i1) => {
                                                 return (
-                                                    <input type="number" key={i1} autoComplete="off" max={"9"} min={"1"} className={`center sudContent ${e1 != 0 ? "defined" : ""}`} id={`${i}${i1}`} value={e1 == 0 ? "" : e1} onChange={(e) => change(e.target)} />
+                                                    <input type="number" key={i1} autoComplete="off" max={"9"} min={"1"} className={`center sudContent ${e1 !== 0 ? "defined" : ""}`} id={`${i}${i1}`} value={e1 === 0 ? "" : e1} onChange={(e) => change(e.target)} />
                                                 )
                                             })
                                         }
@@ -160,7 +160,7 @@ const SudSolver = () => {
                                         {
                                             e.map((e1, i1) => {
                                                 return (
-                                                    <input type="number" key={i1} autoComplete="off" max={"9"} min={"1"} className={`center sudContent ${array[i][i1] != 0 ? "defined" : ""}`} id={`${i}${i1}`} value={e1 == 0 ? "" : e1} onChange={fun} disabled />
+                                                    <input type="number" key={i1} autoComplete="off" max={"9"} min={"1"} className={`center sudContent ${array[i][i1] !== 0 ? "defined" : ""}`} id={`${i}${i1}`} value={e1 === 0 ? "" : e1} onChange={fun} disabled />
                                                 )
                                             })
                                         }

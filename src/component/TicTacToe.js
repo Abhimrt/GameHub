@@ -16,24 +16,24 @@ const TicTacToe = () => {
             setData(temp)
             setCount(count + 1);
             GameOver()
-            setcurrentPlayer(currentPlayer == "❎" ? "⭕" : "❎")
+            setcurrentPlayer(currentPlayer === "❎" ? "⭕" : "❎")
         }
     }
 
     const GameOver = () => {
-        if ((Data[0] !== "      " && Data[0] == Data[1] && Data[1] == Data[2]) || // Top row
-            (Data[3] !== "      " && Data[3] == Data[4] && Data[4] == Data[5]) || // Middle row
-            (Data[6] !== "      " && Data[6] == Data[7] && Data[7] == Data[8]) || // Bottom row
-            (Data[0] !== "      " && Data[0] == Data[3] && Data[3] == Data[6]) || // Left column
-            (Data[1] !== "      " && Data[1] == Data[4] && Data[4] == Data[7]) || // Middle column
-            (Data[2] !== "      " && Data[2] == Data[5] && Data[5] == Data[8]) || // Right column
-            (Data[0] !== "      " && Data[0] == Data[4] && Data[4] == Data[8]) || // Diagonal
-            (Data[2] !== "      " && Data[2] == Data[4] && Data[4] == Data[6])   // Diagonal
+        if ((Data[0] !== "      " && Data[0] === Data[1] && Data[1] === Data[2]) || // Top row
+            (Data[3] !== "      " && Data[3] === Data[4] && Data[4] === Data[5]) || // Middle row
+            (Data[6] !== "      " && Data[6] === Data[7] && Data[7] === Data[8]) || // Bottom row
+            (Data[0] !== "      " && Data[0] === Data[3] && Data[3] === Data[6]) || // Left column
+            (Data[1] !== "      " && Data[1] === Data[4] && Data[4] === Data[7]) || // Middle column
+            (Data[2] !== "      " && Data[2] === Data[5] && Data[5] === Data[8]) || // Right column
+            (Data[0] !== "      " && Data[0] === Data[4] && Data[4] === Data[8]) || // Diagonal
+            (Data[2] !== "      " && Data[2] === Data[4] && Data[4] === Data[6])   // Diagonal
         ) {
             Message.current.innerText = currentPlayer + " Wins!!!";
             Reset()
 
-        } else if (count == 8) {
+        } else if (count === 8) {
             Message.current.innerText = "Match Draw, No one wins"
             Reset()
         }
