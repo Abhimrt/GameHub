@@ -26,7 +26,7 @@ function App() {
             </ul>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href={"https://github.com/Abhimrt"}>🧑🏻‍💻 Developer</a>
+            <a className="nav-link" href={"http://www.abhisheksinghal.in"}>🧑🏻‍💻 Developer</a>
           </li>
 
         </ul>
