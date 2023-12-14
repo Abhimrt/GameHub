@@ -16,7 +16,7 @@ function App() {
             <a className="nav-link active" aria-current="page" href={"/GameHub"}>☠️ GameHub</a>
           </li>
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" to={"/"} role="button" aria-expanded="false">🎮 Games</a>
+            <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href={"/"} role="button" aria-expanded="false">🎮 Games</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href={"/GameHub/Snake"}>🐍 Snake</a></li>
               <li><a className="dropdown-item" href={"/GameHub/Sudoku"}>📃 Sudoku</a></li>
