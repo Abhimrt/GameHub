@@ -7,7 +7,7 @@ import {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Router basename="/GameHub">
+    <Router >
     <App />
   </Router>
 );
