@@ -31,10 +31,8 @@ const SudSolver = () => {
             solution[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] = parseInt(e.value)
         }
         else if (e.value.length === 2) {
-            {
                 array[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] = parseInt(e.value) % 10
                 solution[parseInt(parseInt((e.id)) / 10)][parseInt(e.id) % 10] = parseInt(e.value) % 10
-            }
         }
         setarray([...array])
         setSolution([...solution])
