@@ -13,20 +13,20 @@ function App() {
       < nav className="mb-4">
         <ul className="nav nav-pills">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href={"/GameHub"}>☠️ GameHub</a>
+            <a className="nav-link active" aria-current="page" href={"/"}>☠️ GameHub</a>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href={"/"} role="button" aria-expanded="false">🎮 Games</a>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href={"/GameHub/Snake"}>🐍 Snake</a></li>
-              <li><a className="dropdown-item" href={"/GameHub/Sudoku"}>📃 Sudoku</a></li>
-              <li><a className="dropdown-item" href={"/GameHub/Sudoku-solver"}>❓ Sudoku Solver</a></li>
+              <li><a className="dropdown-item" href={"/Snake"}>🐍 Snake</a></li>
+              <li><a className="dropdown-item" href={"/Sudoku"}>📃 Sudoku</a></li>
+              <li><a className="dropdown-item" href={"/Sudoku-solver"}>❓ Sudoku Solver</a></li>
               <li className="mt-2 text-sm text-gray-500">   🚻 Dual Player<hr className="dropdown-divider mt-0" /> </li>
-              <li><a className="dropdown-item" href={"/GameHub/tictactoe"}>❎ TicTacToe</a></li>
+              <li><a className="dropdown-item" href={"/tictactoe"}>❎ TicTacToe</a></li>
             </ul>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href={"www.abhisheksinghal.in"}>🧑🏻‍💻 Developer</a>
+            <a className="nav-link" href={"https://www.abhisheksinghal.in/"}>🧑🏻‍💻 Developer</a>
           </li>
 
         </ul>
